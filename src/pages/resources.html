@@ -1,0 +1,46 @@
+---
+title: Due-Date Calendar, Checklists & Links | Ajay Anand & Associates
+description: A calendar of key statutory due dates, document checklists for businesses and individuals, and links to official government portals.
+path: /resources/
+breadcrumb: Resources
+---
+<!DOCTYPE html>
+<html lang="en-IN">
+{{> head }}
+<body class="{{ page.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{{> header }}
+<main id="main">
+
+  <section class="hero hero--page"><div class="container">
+    {{> breadcrumb }}
+    <p class="hero__eyebrow">Resources</p>
+    <h1 class="hero__title">Resources to Help You Stay Organised</h1>
+    <p class="hero__lead">A quick reference for statutory due dates, the documents to keep ready and the official portals you may need.</p>
+    <div class="hero__actions"><a class="btn btn--accent" href="{{ booking_href }}"{{ booking_attrs }}>Book a Consultation</a>
+    <a class="btn btn--whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">WhatsApp Us</a></div>
+  </div></section>
+
+  {{> calendar }}
+  {{> documents }}
+  {{> useful-links }}
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">Insights</p>
+        <h2 class="section-head__title">Guides &amp; Updates</h2>
+      </div>
+      <div class="grid grid--3">{{ posts_latest_html }}</div>
+      <p class="resources__more"><a href="/insights/">View all insights &rarr;</a></p>
+    </div>
+  </section>
+
+</main>
+{{> cta-band }}
+{{> footer }}
+{{> wa-float }}
+{{> mobile-bar }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

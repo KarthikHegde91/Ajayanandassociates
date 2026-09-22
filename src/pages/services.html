@@ -1,0 +1,55 @@
+---
+title: Accounting, GST, Tax & Audit Services | Ajay Anand & Associates
+description: Accounting and bookkeeping, GST, income tax, TDS, audit and review, payroll filings, registrations and tax notice assistance for businesses in Bengaluru.
+path: /services/
+breadcrumb: Services
+body_class: page-services
+---
+<!DOCTYPE html>
+<html lang="en-IN">
+{{> head }}
+<body class="{{ page.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{{> header }}
+<main id="main">
+
+<section class="hero hero--page"><div class="container">
+  {{> breadcrumb }}
+  <p class="hero__eyebrow">Our services</p>
+  <h1 class="hero__title">Comprehensive Accounting, Tax &amp; Audit Services</h1>
+  <p class="hero__lead">We assist clients with accounting and bookkeeping, GST filings, income-tax matters, TDS, audit support, registrations and other business filing requirements.</p>
+  <div class="hero__actions"><a class="btn btn--accent" href="{{ booking_href }}"{{ booking_attrs }}>Book a Consultation</a>
+  <a class="btn btn--whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">WhatsApp Us</a></div>
+</div></section>
+
+<section class="section" data-reveal>
+  <div class="container">
+    <h2 class="sr-only">Our eight service areas</h2>
+      <div class="grid grid--2">{{ services_cards_html }}</div>
+  </div>
+</section>
+
+{{> audience-split }}
+
+{{> process }}
+
+<section class="section section--alt" data-reveal>
+  <div class="container">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="section-head__title">Common questions</h2>
+      <p class="section-head__lead">Answers to a few things clients often ask about our services.</p>
+    </div>
+    {{ faq_top_html }}
+    <p class="section-cta"><a class="btn btn--secondary" href="/faq/">View all FAQs</a></p>
+  </div>
+</section>
+
+</main>
+{{> cta-band }}
+{{> footer }}
+{{> wa-float }}
+{{> mobile-bar }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

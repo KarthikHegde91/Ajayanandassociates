@@ -1,0 +1,35 @@
+---
+title: Thank You | Ajay Anand & Associates
+description: Thank you for your enquiry. We have received your message and will respond during business hours.
+path: /thank-you/
+breadcrumb: Thank You
+robots: noindex,nofollow
+---
+<!DOCTYPE html>
+<html lang="en-IN">
+{{> head }}
+<body class="{{ page.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{{> header }}
+<main id="main">
+
+  <section class="hero hero--page"><div class="container">
+    {{> breadcrumb }}
+    <p class="hero__eyebrow">Enquiry received</p>
+    <h1 class="hero__title">Thank you &mdash; we've received your enquiry.</h1>
+    <p class="hero__lead">We will get back to you during business hours ({{ site.hours }}). In the meantime, feel free to reach us directly.</p>
+    <div class="hero__actions">
+      <a class="btn btn--whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a class="btn btn--secondary" href="{{ tel_href }}">Call Us</a>
+      <a class="btn btn--ghost" href="/">Back to Home</a>
+    </div>
+  </div></section>
+
+</main>
+{{> cta-band }}
+{{> footer }}
+{{> wa-float }}
+{{> mobile-bar }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

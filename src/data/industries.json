@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "retail",
+    "icon": "retail",
+    "title": "Retail & Trading",
+    "text": "Accounting, GST, inventory and tax filings support for retail and trading businesses."
+  },
+  {
+    "slug": "restaurants",
+    "icon": "restaurants",
+    "title": "Restaurants & Catering",
+    "text": "Accounting, GST, expense tracking and filing support for restaurants, caterers and food businesses."
+  },
+  {
+    "slug": "real-estate",
+    "icon": "real-estate",
+    "title": "Real Estate & Property",
+    "text": "Accounting, rental income records, GST and tax filings support for property-related businesses."
+  },
+  {
+    "slug": "professional",
+    "icon": "professional",
+    "title": "Professional Services",
+    "text": "Accounting and tax filings support for consultants, freelancers and professional service providers."
+  },
+  {
+    "slug": "healthcare",
+    "icon": "healthcare",
+    "title": "Healthcare",
+    "text": "Accounting, GST and filing support for hospitals, clinics and healthcare service providers."
+  },
+  {
+    "slug": "education",
+    "icon": "education",
+    "title": "Educational Institutions",
+    "text": "Financial record maintenance, filing support and accounting assistance for educational organisations."
+  },
+  {
+    "slug": "startups",
+    "icon": "startups",
+    "title": "Start-ups & Small Businesses",
+    "text": "Practical accounting, GST and tax support to help growing businesses establish proper financial systems."
+  },
+  {
+    "slug": "rwa",
+    "icon": "rwa",
+    "title": "Resident Welfare Associations & Associations",
+    "text": "Accounting, GST applicability review, reconciliation and filing support."
+  },
+  {
+    "slug": "services",
+    "icon": "services",
+    "title": "Service Businesses",
+    "text": "End-to-end bookkeeping, GST, TDS and taxation support for service-oriented businesses."
+  },
+  {
+    "slug": "manufacturing",
+    "icon": "manufacturing",
+    "title": "Manufacturing & Other Businesses",
+    "text": "Accounting, GST, reconciliation and filing support based on the specific requirements of the business."
+  }
+]

@@ -1,0 +1,215 @@
+---
+draft: true
+title: Style Guide | Ajay Anand & Associates
+description: Internal QA page demonstrating every component in the design system. Not linked publicly.
+path: /_styleguide/
+breadcrumb: Style Guide
+robots: noindex,nofollow
+body_class: page-styleguide
+---
+<!DOCTYPE html>
+<html lang="en-IN">
+{{> head }}
+<body class="{{ page.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{{> header }}
+<main id="main">
+
+  <section class="hero hero--page">
+    <div class="container">
+      {{ page.breadcrumb_html }}
+      <p class="hero__eyebrow">Internal QA</p>
+      <h1 class="hero__title">Style Guide</h1>
+      <p class="hero__lead">Every component in the design system, for eyeballing at multiple widths. Not linked from navigation, noindexed.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">Tokens</p><h2 class="section-head__title">Colour</h2></div>
+      <div class="sg-swatches">
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#081C3A"></div><p class="sg-swatch__label">primary-900</p></div>
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#0B2545"></div><p class="sg-swatch__label">primary</p></div>
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#13315C"></div><p class="sg-swatch__label">primary-600</p></div>
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#2E5E9E"></div><p class="sg-swatch__label">primary-400</p></div>
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#E4EBF5"></div><p class="sg-swatch__label">primary-100</p></div>
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#F2F6FB"></div><p class="sg-swatch__label">primary-050</p></div>
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#C9A227"></div><p class="sg-swatch__label">accent</p></div>
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#A8861B"></div><p class="sg-swatch__label">accent-600</p></div>
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#FBF3D9"></div><p class="sg-swatch__label">accent-100</p></div>
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#1E8E5A"></div><p class="sg-swatch__label">success</p></div>
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#C0392B"></div><p class="sg-swatch__label">error</p></div>
+        <div class="sg-swatch"><div class="sg-swatch__fill" style="background:#25D366"></div><p class="sg-swatch__label">whatsapp</p></div>
+      </div>
+
+      <div class="section-head" style="margin-top:var(--sp-8)"><p class="eyebrow">Tokens</p><h2 class="section-head__title">Type</h2></div>
+      <h1>H1 Heading — Plus Jakarta Sans 800</h1>
+      <h2>H2 Heading — Plus Jakarta Sans 800</h2>
+      <h3>H3 Heading — Inter 600</h3>
+      <h4>H4 Heading — Inter 600</h4>
+      <p>Body paragraph set in Inter 400. We provide practical accounting, taxation, GST, audit support and filing solutions designed to help businesses maintain accurate records.</p>
+      <p><a href="#">A text link inside body copy</a> demonstrating underline offset and hover colour.</p>
+
+      <div class="section-head" style="margin-top:var(--sp-8)"><p class="eyebrow">Buttons</p><h2 class="section-head__title">Buttons &amp; badges</h2></div>
+      <div class="sg-row">
+        <a class="btn btn--primary" href="#">Primary</a>
+        <a class="btn btn--accent" href="#">Accent</a>
+        <a class="btn btn--secondary" href="#">Secondary</a>
+        <a class="btn btn--ghost" href="#">Ghost</a>
+        <a class="btn btn--whatsapp" href="#">WhatsApp</a>
+        <a class="btn btn--primary btn--lg" href="#">Large</a>
+        <button class="btn btn--primary" disabled>Disabled</button>
+      </div>
+      <div class="sg-row" style="background:var(--c-primary-900);padding:var(--sp-5);border-radius:var(--r-md)">
+        <a class="btn btn--secondary-light" href="#">Secondary light</a>
+        <a class="btn btn--accent" href="#">Accent</a>
+      </div>
+      <div class="sg-row">
+        <span class="badge">Badge</span>
+        <span class="chips"><span class="chip">Chip one</span><span class="chip">Chip two</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">Services</p>
+        <h2 class="section-head__title">Service cards</h2>
+      </div>
+      <div class="grid grid--3">{{ services_cards_html }}</div>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">Industries</p>
+        <h2 class="section-head__title">Industry cards</h2>
+      </div>
+      <div class="grid grid--4">{{ industries_cards_html }}</div>
+    </div>
+  </section>
+
+  {{> process }}
+  {{> why-us }}
+
+  <section class="section" data-reveal>
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">Trust</p><h2 class="section-head__title">Trust strip &amp; checklist</h2></div>
+      <div class="trust-strip">
+        <span class="trust-strip__item">GST &amp; Income Tax</span>
+        <span class="trust-strip__item">Audit Support</span>
+        <span class="trust-strip__item">TDS Compliance</span>
+        <span class="trust-strip__item">Business Registrations</span>
+      </div>
+      <div class="mt-6">{{ documents_business_html }}</div>
+    </div>
+  </section>
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">Audience</p><h2 class="section-head__title">Audience split</h2></div>
+      <div class="audience">
+        <div class="audience__panel audience__panel--navy">
+          <h3>For Businesses</h3>
+          <p>Running a business involves more than sales and operations.</p>
+          <ul class="checklist checklist--2"><li class="checklist__item">GST filings</li><li class="checklist__item">TDS compliance</li></ul>
+        </div>
+        <div class="audience__panel audience__panel--surface">
+          <h3>For Individuals &amp; Professionals</h3>
+          <p>We provide professional support for individuals, consultants and freelancers.</p>
+          <ul class="checklist checklist--2"><li class="checklist__item">Income-tax return filing</li><li class="checklist__item">Tax planning</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">Callouts</p><h2 class="section-head__title">Callouts &amp; accordion</h2></div>
+      <div class="stack">
+        <p class="callout callout--note">Note callout — informational, navy left border.</p>
+        <p class="callout callout--warn">Warning callout — dates are indicative and subject to change or extension by the authorities.</p>
+      </div>
+      <div class="mt-6">{{ faq_top_html }}</div>
+    </div>
+  </section>
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">Due-date calendar</p><h2 class="section-head__title">Calendar table</h2></div>
+      <div class="table-wrap">
+        <table class="calendar">
+          <thead><tr><th scope="col">Due date</th><th scope="col">Compliance item</th><th scope="col">Note</th></tr></thead>
+          <tbody>{{ calendar_mini_html }}</tbody>
+        </table>
+      </div>
+      <p class="calendar__note-foot">Dates are indicative and subject to change or extension by the authorities. Please verify current due dates.</p>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">Resources</p><h2 class="section-head__title">Links grid &amp; map</h2></div>
+      {{ links_html }}
+      <div class="mt-6">{{ maps_embed_html }}</div>
+    </div>
+  </section>
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">Insights</p><h2 class="section-head__title">Post cards</h2></div>
+      <div class="grid grid--3">{{ posts_latest_html }}</div>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container container--narrow">
+      <div class="section-head"><p class="eyebrow">Contact</p><h2 class="section-head__title">Contact form &amp; card</h2></div>
+      <div class="split">
+        <div class="split__text">
+          <div class="contact-card">
+            <div class="contact-card__row">
+              <span class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span><span class="contact-card__label">Location</span><br><span class="contact-card__value">{{ site.address.locality }}, {{ site.address.region }}, India</span></span>
+            </div>
+            <div class="contact-card__row">
+              <span class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+              <span><span class="contact-card__label">Hours</span><br><span class="contact-card__value">{{ site.hours }}</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="split__media">
+          {{> contact-form }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="section-head section-head--center"><p class="eyebrow">Team &amp; testimonial (sample markup)</p><h2 class="section-head__title">Testimonial &amp; team card</h2></div>
+      <div class="grid grid--2">
+        <figure class="testimonial">
+          <blockquote class="testimonial__quote">"Sample testimonial copy for layout purposes only."</blockquote>
+          <figcaption class="testimonial__by"><strong>Client Name</strong><span>Business Owner</span></figcaption>
+        </figure>
+        <article class="team-card">
+          <div class="team-card__avatar">AA</div>
+          <h3 class="team-card__name">Team Member</h3>
+          <p class="team-card__role">Role</p>
+          <p class="team-card__bio">Short sample bio for layout purposes only.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+{{> cta-band }}
+{{> footer }}
+{{> wa-float }}
+{{> mobile-bar }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

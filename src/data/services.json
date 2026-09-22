@@ -1,0 +1,404 @@
+[
+  {
+    "slug": "accounting-bookkeeping",
+    "num": "01",
+    "title": "Accounting & Bookkeeping",
+    "short": "Accounting",
+    "icon": "accounting",
+    "summary": "Maintain organised and reliable financial records with professional bookkeeping support.",
+    "items": [
+      "Bookkeeping and accounting",
+      "Ledger maintenance",
+      "Accounts payable and receivable",
+      "Bank reconciliation",
+      "Sales and purchase accounting",
+      "Expense accounting",
+      "Journal entries",
+      "Debtor and creditor reconciliation",
+      "Financial statement preparation",
+      "Accounts finalisation support",
+      "Monthly and periodic MIS reports"
+    ],
+    "note": "",
+    "deep_dive": {
+      "eyebrow": "Accounting & bookkeeping",
+      "title": "Know Your Numbers. Grow Your Business.",
+      "intro": "Good accounting provides the foundation for better business decisions.",
+      "lead_in": "Our bookkeeping services help you maintain:",
+      "items": [
+        "Updated books",
+        "Proper ledgers",
+        "Bank reconciliations",
+        "Customer and supplier balances",
+        "Sales and purchase records",
+        "Expense records",
+        "Financial statements",
+        "Monthly financial information"
+      ],
+      "outro": "Whether you are a start-up, small business or established organisation, we can help you maintain a more organised accounting system."
+    },
+    "who_for": [
+      "Start-ups & small businesses",
+      "Retail & trading businesses",
+      "Service businesses",
+      "Manufacturing & other businesses"
+    ],
+    "related": [
+      "gst-services",
+      "tds-services",
+      "audit-assurance"
+    ],
+    "faq_tags": [
+      "accounting",
+      "remote",
+      "fees"
+    ],
+    "calendar_tags": [],
+    "show_documents": "business",
+    "seo": {
+      "title": "Accounting & Bookkeeping in Bengaluru | Ajay Anand & Associates",
+      "description": "Professional accounting and bookkeeping, ledger maintenance, bank reconciliation, financial statements and monthly MIS reports for businesses in Bengaluru."
+    }
+  },
+  {
+    "slug": "gst-services",
+    "num": "02",
+    "title": "GST Services",
+    "short": "GST",
+    "icon": "gst",
+    "summary": "End-to-end GST filing and support for businesses.",
+    "items": [
+      "GST registration",
+      "GST amendment",
+      "GST cancellation",
+      "GSTR-1 filing",
+      "GSTR-3B filing",
+      "GSTR-9 filing",
+      "GSTR-9C assistance",
+      "Input Tax Credit reconciliation",
+      "GSTR-2B reconciliation",
+      "Sales and purchase reconciliation",
+      "E-invoice and e-way bill support",
+      "GST payment and liability review",
+      "GST review",
+      "GST audit assistance",
+      "GST notices and reply assistance",
+      "GST departmental correspondence",
+      "LUT and export-related GST filings",
+      "Reverse Charge Mechanism review"
+    ],
+    "note": "",
+    "deep_dive": {
+      "eyebrow": "GST review",
+      "title": "Stay Accurate. Stay Organised.",
+      "intro": "GST involves more than simply filing returns.",
+      "lead_in": "We help businesses review their:",
+      "items": [
+        "Sales",
+        "Purchases",
+        "Input Tax Credit",
+        "GSTR-2B",
+        "GSTR-1",
+        "GSTR-3B",
+        "E-invoices",
+        "E-way bills",
+        "Reverse Charge Mechanism",
+        "Annual returns"
+      ],
+      "outro": "Our objective is to identify discrepancies early and help maintain proper GST records."
+    },
+    "who_for": [
+      "Retail & trading businesses",
+      "Service businesses",
+      "Exporters (LUT)",
+      "Start-ups"
+    ],
+    "related": [
+      "gst-tax-notice-assistance",
+      "accounting-bookkeeping",
+      "tds-services"
+    ],
+    "faq_tags": [
+      "gst"
+    ],
+    "calendar_tags": [
+      "gst"
+    ],
+    "show_documents": null,
+    "seo": {
+      "title": "GST Registration & Filing in Bengaluru | Ajay Anand & Associates",
+      "description": "GST registration, GSTR-1, GSTR-3B and GSTR-9 filing, ITC reconciliation and GST notice support for businesses in Bengaluru. Practical GST filings assistance."
+    }
+  },
+  {
+    "slug": "income-tax",
+    "num": "03",
+    "title": "Income Tax Services",
+    "short": "Income Tax",
+    "icon": "income-tax",
+    "summary": "Tax filing and planning support for individuals, professionals and businesses.",
+    "items": [
+      "Income Tax Return filing",
+      "Business and professional taxation",
+      "Individual taxation",
+      "Tax computation",
+      "Capital gains computation",
+      "Advance tax calculation",
+      "Tax planning",
+      "Income-tax notice assistance",
+      "Tax-related documentation",
+      "Tax review"
+    ],
+    "note": "",
+    "deep_dive": null,
+    "who_for": [
+      "Individuals",
+      "Professionals & consultants",
+      "Freelancers",
+      "Businesses"
+    ],
+    "related": [
+      "tds-services",
+      "gst-tax-notice-assistance",
+      "accounting-bookkeeping"
+    ],
+    "faq_tags": [
+      "income-tax"
+    ],
+    "calendar_tags": [
+      "income-tax"
+    ],
+    "show_documents": "individual",
+    "seo": {
+      "title": "Income Tax Return Filing in Bengaluru | Ajay Anand & Associates",
+      "description": "Income Tax Return filing, tax computation, capital gains, advance tax and tax planning support for individuals, professionals and businesses in Bengaluru."
+    }
+  },
+  {
+    "slug": "audit-assurance",
+    "num": "04",
+    "title": "Audit & Assurance Support",
+    "short": "Audit & Review",
+    "icon": "audit",
+    "summary": "We provide audit-related and financial review services based on the nature and requirements of the engagement.",
+    "items": [
+      "Internal audit",
+      "Accounts review",
+      "Financial record verification",
+      "Expense and revenue review",
+      "Bank and ledger scrutiny",
+      "Process review",
+      "Internal control review",
+      "Stock/inventory verification",
+      "Audit documentation support",
+      "Audit preparation and coordination",
+      "Special-purpose financial reviews"
+    ],
+    "note": "Statutory audit engagements are undertaken subject to applicable law, eligibility and professional requirements.",
+    "deep_dive": {
+      "eyebrow": "Audit & review",
+      "title": "Independent Review. Better Financial Control.",
+      "intro": "Our audit and review support focuses on identifying inconsistencies, improving financial processes and strengthening internal controls.",
+      "lead_in": "Depending on the engagement, our work may cover:",
+      "items": [
+        "Financial records",
+        "Ledgers",
+        "Bank accounts",
+        "Revenue",
+        "Expenses",
+        "Purchases",
+        "Receivables",
+        "Payables",
+        "Internal controls",
+        "Filing procedures"
+      ],
+      "outro": "Every engagement is tailored to the client's specific requirements and applicable professional and legal requirements."
+    },
+    "who_for": [
+      "Small & mid-sized businesses",
+      "Start-ups & growing businesses",
+      "Educational institutions",
+      "Resident Welfare Associations"
+    ],
+    "related": [
+      "accounting-bookkeeping",
+      "gst-services",
+      "income-tax"
+    ],
+    "faq_tags": [
+      "audit"
+    ],
+    "calendar_tags": [],
+    "show_documents": null,
+    "seo": {
+      "title": "Audit & Assurance Services in Bengaluru | Ajay Anand & Associates",
+      "description": "Internal audit, accounts review, internal control review and financial record verification for businesses in Bengaluru. Practical audit and assurance support."
+    }
+  },
+  {
+    "slug": "tds-services",
+    "num": "05",
+    "title": "TDS Services",
+    "short": "TDS",
+    "icon": "tds",
+    "summary": "Helping businesses manage their TDS filings efficiently.",
+    "items": [
+      "TDS applicability review",
+      "TDS calculation",
+      "TDS return preparation and filing",
+      "TDS reconciliation",
+      "Form 16 / Form 16A support",
+      "TDS payments",
+      "TDS notices and correspondence",
+      "TDS review"
+    ],
+    "note": "",
+    "deep_dive": null,
+    "who_for": [
+      "Employers",
+      "Businesses deducting TDS",
+      "Service businesses",
+      "Manufacturing & trading businesses"
+    ],
+    "related": [
+      "payroll-labour-compliance",
+      "income-tax",
+      "gst-tax-notice-assistance"
+    ],
+    "faq_tags": [
+      "tds"
+    ],
+    "calendar_tags": [
+      "tds"
+    ],
+    "show_documents": null,
+    "seo": {
+      "title": "TDS Return Filing in Bengaluru | Ajay Anand & Associates",
+      "description": "TDS applicability review, calculation, return filing, reconciliation and Form 16/16A support for businesses in Bengaluru. Accurate, timely TDS filings."
+    }
+  },
+  {
+    "slug": "payroll-labour-compliance",
+    "num": "06",
+    "title": "Payroll & Statutory Filings",
+    "short": "Payroll & Filings",
+    "icon": "payroll",
+    "summary": "Support for businesses in maintaining payroll-related statutory filings.",
+    "items": [
+      "Payroll processing support",
+      "Salary calculations",
+      "ESI filings",
+      "PF filings",
+      "Professional Tax filings",
+      "Payroll reconciliation",
+      "Employee statutory deductions",
+      "Periodic filing support"
+    ],
+    "note": "",
+    "deep_dive": null,
+    "who_for": [
+      "Businesses with employees",
+      "Start-ups & small businesses",
+      "Service businesses",
+      "Manufacturing businesses"
+    ],
+    "related": [
+      "tds-services",
+      "accounting-bookkeeping",
+      "business-registrations"
+    ],
+    "faq_tags": [
+      "payroll"
+    ],
+    "calendar_tags": [
+      "payroll"
+    ],
+    "show_documents": null,
+    "seo": {
+      "title": "Payroll, PF, ESI & PT Filings in Bengaluru | Ajay Anand & Associates",
+      "description": "Payroll processing, PF, ESI and Professional Tax filing support for businesses in Bengaluru. Accurate salary calculations and statutory payroll filings."
+    }
+  },
+  {
+    "slug": "business-registrations",
+    "num": "07",
+    "title": "Business Registrations",
+    "short": "Business Registrations",
+    "icon": "registrations",
+    "summary": "Support for setting up and maintaining business registrations.",
+    "items": [
+      "GST registration",
+      "Proprietorship-related registrations",
+      "Partnership-related filings",
+      "LLP-related filing support",
+      "Trade Licence assistance",
+      "FSSAI registration",
+      "Professional Tax registration",
+      "Other applicable business registrations"
+    ],
+    "note": "",
+    "deep_dive": null,
+    "who_for": [
+      "New businesses & start-ups",
+      "Proprietorships & partnerships",
+      "LLPs",
+      "Restaurants & food businesses"
+    ],
+    "related": [
+      "gst-services",
+      "accounting-bookkeeping",
+      "payroll-labour-compliance"
+    ],
+    "faq_tags": [
+      "registrations"
+    ],
+    "calendar_tags": [],
+    "show_documents": "business",
+    "seo": {
+      "title": "Business Registration Services in Bengaluru | Ajay Anand & Associates",
+      "description": "GST registration, proprietorship and partnership registration, LLP filing support, Trade Licence and FSSAI registration for new businesses in Bengaluru."
+    }
+  },
+  {
+    "slug": "gst-tax-notice-assistance",
+    "num": "08",
+    "title": "GST & Tax Notice Assistance",
+    "short": "Notice Assistance",
+    "icon": "notice",
+    "summary": "Received a notice from the tax department? We assist with understanding the notice, reviewing the relevant records and preparing appropriate responses and supporting documentation.",
+    "items": [
+      "GST notices",
+      "GST audit observations",
+      "ASMT-related matters",
+      "DRC-related matters",
+      "Income-tax notices",
+      "TDS notices",
+      "Reconciliation of disputed figures",
+      "Supporting documentation",
+      "Reply preparation",
+      "Departmental correspondence support"
+    ],
+    "note": "",
+    "deep_dive": null,
+    "who_for": [
+      "Businesses & individuals with tax notices",
+      "GST-registered businesses",
+      "Salaried & self-employed individuals",
+      "Professionals & consultants"
+    ],
+    "related": [
+      "gst-services",
+      "income-tax",
+      "tds-services"
+    ],
+    "faq_tags": [
+      "notices"
+    ],
+    "calendar_tags": [],
+    "show_documents": null,
+    "seo": {
+      "title": "GST & Tax Notice Assistance in Bengaluru | Ajay Anand & Associates",
+      "description": "Received a GST or income-tax notice? We review your records and help prepare responses to GST, ASMT, DRC, income-tax and TDS notices in Bengaluru."
+    }
+  }
+]

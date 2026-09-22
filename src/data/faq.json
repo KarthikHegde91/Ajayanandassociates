@@ -1,0 +1,62 @@
+[
+  {
+    "q": "What services does Ajay Anand & Associates provide?",
+    "a": "We provide accounting and bookkeeping, GST, income tax, TDS, audit and review support, payroll-related filings, business registrations and tax notice assistance.",
+    "group": "General",
+    "tags": ["general"]
+  },
+  {
+    "q": "Do you provide monthly accounting services?",
+    "a": "Yes. Monthly bookkeeping and accounting support can be provided based on the size and requirements of the business.",
+    "group": "General",
+    "tags": ["accounting"]
+  },
+  {
+    "q": "Do you handle GST return filing?",
+    "a": "Yes. We provide GST filings support including GSTR-1, GSTR-3B, annual return support, reconciliation and other applicable GST services.",
+    "group": "GST",
+    "tags": ["gst"]
+  },
+  {
+    "q": "Can you help with GST notices?",
+    "a": "Yes. We can review the notice, analyse the relevant records and assist with preparing the required response and supporting documentation.",
+    "group": "GST",
+    "tags": ["gst", "notices"]
+  },
+  {
+    "q": "Do you provide Income Tax Return filing?",
+    "a": "Yes. We provide ITR filing and related tax computation and filing support for eligible individuals, professionals and businesses.",
+    "group": "Income Tax & TDS",
+    "tags": ["income-tax"]
+  },
+  {
+    "q": "Do you provide TDS filing services?",
+    "a": "Yes. We assist with TDS calculation, payment deadlines, return filing, reconciliation and related notices.",
+    "group": "Income Tax & TDS",
+    "tags": ["tds"]
+  },
+  {
+    "q": "Can you handle accounting remotely?",
+    "a": "Yes. Depending on the nature of the engagement, accounting and filing services can be provided using digital document-sharing and communication systems.",
+    "group": "Working with us",
+    "tags": ["remote", "accounting"]
+  },
+  {
+    "q": "Do you provide services to businesses outside Bengaluru?",
+    "a": "Yes. Many accounting and filing activities can be handled digitally, subject to the nature of the engagement and applicable requirements.",
+    "group": "Working with us",
+    "tags": ["remote", "general"]
+  },
+  {
+    "q": "How are professional fees decided?",
+    "a": "Fees depend on factors such as the nature of services, transaction volume, number of GST registrations, complexity of accounts and frequency of filings. We provide a clear fee proposal after understanding the client's requirements.",
+    "group": "Working with us",
+    "tags": ["fees", "general"]
+  },
+  {
+    "q": "What documents are required to start accounting services?",
+    "a": "The documents depend on the nature of the business and services required. Typically, we may require accounting records, bank statements, sales and purchase invoices, GST information and previous financial/tax records.",
+    "group": "Working with us",
+    "tags": ["accounting", "general", "fees"]
+  }
+]

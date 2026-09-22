@@ -1,0 +1,49 @@
+---
+title: FAQs on Accounting, GST, Tax & Fees | Ajay Anand & Associates
+description: Answers to common questions about accounting, GST return filing, income tax, TDS, fees and working with Ajay Anand & Associates in Bengaluru.
+path: /faq/
+breadcrumb: FAQ
+---
+<!DOCTYPE html>
+<html lang="en-IN">
+{{> head }}
+<body class="{{ page.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{{> header }}
+<main id="main">
+
+  <section class="hero hero--page"><div class="container">
+    {{> breadcrumb }}
+    <p class="hero__eyebrow">FAQ</p>
+    <h1 class="hero__title">Frequently Asked Questions</h1>
+    <p class="hero__lead">Answers to common questions about our accounting, GST, income-tax and TDS services, and how we work with clients.</p>
+    <div class="hero__actions"><a class="btn btn--accent" href="{{ booking_href }}"{{ booking_attrs }}>Book a Consultation</a>
+    <a class="btn btn--whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">WhatsApp Us</a></div>
+  </div></section>
+
+  <section class="section" data-reveal>
+    <div class="container container--narrow">{{ faq_groups_html }}</div>
+  </section>
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="section-head section-head--center">
+        <h2 class="section-head__title">Still have questions?</h2>
+        <p class="section-head__lead">We'd be happy to understand your specific requirements.</p>
+      </div>
+      <div class="hero__actions">
+        <a class="btn btn--whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">WhatsApp Us</a>
+        <a class="btn btn--secondary" href="/contact/">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  {{ faq_json_ld }}
+</main>
+{{> cta-band }}
+{{> footer }}
+{{> wa-float }}
+{{> mobile-bar }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+[
+  {
+    "due": "11th of the following month",
+    "item": "GSTR-1 filing",
+    "note": "QRMP quarterly filers file by the 13th of the month after the quarter, as applicable.",
+    "tags": ["gst"],
+    "featured": true
+  },
+  {
+    "due": "20th of the following month",
+    "item": "GSTR-3B filing",
+    "note": "QRMP quarterly filers file by the 22nd or 24th depending on state, as applicable.",
+    "tags": ["gst"],
+    "featured": true
+  },
+  {
+    "due": "7th of the following month",
+    "item": "TDS/TCS payment",
+    "note": "TDS deducted for March is due by 30 April, as applicable.",
+    "tags": ["tds"],
+    "featured": true
+  },
+  {
+    "due": "15th of the following month",
+    "item": "PF & ESI contributions",
+    "note": "Employer and employee contributions for the month, as applicable.",
+    "tags": ["payroll"],
+    "featured": true
+  },
+  {
+    "due": "20th of every month",
+    "item": "Karnataka Professional Tax payment",
+    "note": "Monthly payment for registered employers, as applicable.",
+    "tags": ["payroll"],
+    "featured": false
+  },
+  {
+    "due": "18th after quarter end",
+    "item": "CMP-08 for composition dealers",
+    "note": "Quarterly statement-cum-challan for composition scheme taxpayers, as applicable.",
+    "tags": ["gst"],
+    "featured": false
+  },
+  {
+    "due": "31 Jul / 31 Oct / 31 Jan / 31 May",
+    "item": "TDS quarterly returns",
+    "note": "Covers the quarters ending June, September, December and March respectively.",
+    "tags": ["tds"],
+    "featured": false
+  },
+  {
+    "due": "15 June",
+    "item": "Form 16 issue to employees",
+    "note": "Annual TDS certificate for the previous financial year.",
+    "tags": ["tds", "payroll"],
+    "featured": false
+  },
+  {
+    "due": "15 Jun / 15 Sep / 15 Dec / 15 Mar",
+    "item": "Advance tax instalments",
+    "note": "Applicable where estimated tax liability exceeds the prescribed threshold.",
+    "tags": ["income-tax"],
+    "featured": false
+  },
+  {
+    "due": "31 July",
+    "item": "ITR filing for non-audit cases",
+    "note": "For individuals and entities not requiring a tax audit, as applicable.",
+    "tags": ["income-tax"],
+    "featured": false
+  },
+  {
+    "due": "30 September",
+    "item": "Tax audit report",
+    "note": "For entities and individuals whose accounts are subject to tax audit.",
+    "tags": ["income-tax"],
+    "featured": false
+  },
+  {
+    "due": "31 October",
+    "item": "ITR filing for audit cases",
+    "note": "For taxpayers whose accounts are subject to audit.",
+    "tags": ["income-tax"],
+    "featured": false
+  },
+  {
+    "due": "31 December",
+    "item": "GSTR-9 / GSTR-9C annual return",
+    "note": "Annual return and reconciliation statement, as applicable based on turnover.",
+    "tags": ["gst"],
+    "featured": false
+  },
+  {
+    "due": "Before start of financial year",
+    "item": "GST LUT renewal for exporters",
+    "note": "Annual renewal for exporters supplying without payment of IGST, as applicable.",
+    "tags": ["gst"],
+    "featured": false
+  }
+]

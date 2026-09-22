@@ -1,0 +1,182 @@
+/* ============================================================
+   tokens.css — design tokens (colour, type, spacing, radius,
+   shadow, layout, motion). Every other stylesheet consumes these
+   custom properties.
+
+   Theming: bare :root below is the complete LIGHT palette (do not
+   change these values). Dark values live in two blocks further
+   down — one for `prefers-color-scheme: dark` (the OS default,
+   unless the visitor has explicitly picked a theme) and one for
+   `[data-theme="dark"]` (explicit choice, set by main.js / the
+   no-flash inline script in head.html). Every token defined here
+   is redefined, identically, in both dark blocks.
+   ============================================================ */
+:root {
+  /* -- colour: navy & gold -- */
+  --c-primary-900: #0B1F4B;
+  --c-primary: #12306F;
+  --c-primary-600: #1B44A3;
+  --c-primary-400: #2F62D6;
+  --c-primary-300: #A9C4F3;
+  --c-primary-100: #E3EAFB;
+  --c-primary-050: #F3F6FD;
+  --c-accent: #D33030;
+  --c-accent-600: #B42525;
+  --c-accent-100: #FBE8E8;
+  --c-ink: #14181F;
+  --c-text: #2A313B;
+  --c-muted: #5B6470;
+  --c-line: #E3E7EC;
+  --c-surface: #F6F8FA;
+  --c-card: #FFFFFF;
+  --c-bg: #FFFFFF;
+  --c-header-bg: #FFFFFF;
+  --c-input-bg: #FFFFFF;
+  --c-logo-box: transparent;
+  --c-logo-box-pad: 0;
+  --c-success: #1E8E5A;
+  --c-error: #C0392B;
+  --c-blue-light: #8FB4F0;
+  --c-whatsapp: #25D366;
+  --c-shadow-rgb: 8, 28, 58;
+
+  /* -- semantic aliases: same value as their light source above;
+     only the dark blocks give these a different colour -- */
+  --c-heading: var(--c-primary-900);
+  --c-link: var(--c-primary);
+  --c-link-hover: var(--c-primary-600);
+  --c-eyebrow: var(--c-primary-400);
+
+  /* -- type -- */
+  --font-head: "Plus Jakarta Sans", "Inter", -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* fluid type scale: clamp(min, preferred, max) */
+  --fs-xs:  clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+  --fs-sm:  clamp(0.875rem, 0.84rem + 0.2vw, 0.9375rem);
+  --fs-base: clamp(1rem, 0.965rem + 0.2vw, 1.0625rem);
+  --fs-md:  clamp(1.125rem, 1.06rem + 0.35vw, 1.25rem);
+  --fs-lg:  clamp(1.375rem, 1.24rem + 0.7vw, 1.625rem);
+  --fs-xl:  clamp(1.75rem, 1.5rem + 1.2vw, 2.25rem);
+  --fs-2xl: clamp(2.125rem, 1.75rem + 1.9vw, 2.875rem);
+  --fs-3xl: clamp(2.5rem, 2rem + 3vw, 3.75rem);
+
+  /* 4px spacing scale */
+  --sp-1: 0.25rem;   /* 4  */
+  --sp-2: 0.5rem;    /* 8  */
+  --sp-3: 0.75rem;   /* 12 */
+  --sp-4: 1rem;      /* 16 */
+  --sp-5: 1.5rem;    /* 24 */
+  --sp-6: 2rem;      /* 32 */
+  --sp-7: 3rem;      /* 48 */
+  --sp-8: 4rem;      /* 64 */
+  --sp-9: 6rem;      /* 96 */
+
+  --section-y: clamp(3rem, 2.4rem + 2.5vw, 6rem);
+
+  /* radius / shadow */
+  --r-sm: 6px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-pill: 999px;
+  --sh-sm: 0 1px 2px rgba(var(--c-shadow-rgb), 0.06), 0 1px 1px rgba(var(--c-shadow-rgb), 0.04);
+  --sh-md: 0 8px 24px rgba(var(--c-shadow-rgb), 0.10), 0 2px 6px rgba(var(--c-shadow-rgb), 0.06);
+  --sh-lg: 0 20px 48px rgba(var(--c-shadow-rgb), 0.16), 0 6px 16px rgba(var(--c-shadow-rgb), 0.08);
+
+  /* layout */
+  --container: 74rem;
+  --container-wide: 82rem;
+  --container-narrow: 44rem;
+  --gutter: clamp(1rem, 0.85rem + 1vw, 2rem);
+
+  /* motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur: 200ms;
+
+  color-scheme: light;
+}
+
+/* -- dark palette: OS default (no explicit choice stored) -- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --c-primary-300: #6E97F0;
+    --c-primary-100: #1B2B4F;
+    --c-primary-050: #131F3A;
+    --c-accent-100: #3A1B22;
+    --c-ink: #FFFFFF;
+    --c-text: #E6EBF5;
+    --c-muted: #A5B0C6;
+    --c-line: rgba(255, 255, 255, 0.10);
+    --c-surface: #111C33;
+    --c-card: #15213D;
+    --c-bg: #0B1426;
+    --c-header-bg: #111C33;
+    --c-input-bg: #111C33;
+    --c-logo-box: #FFFFFF;
+    --c-logo-box-pad: 6px 10px;
+    --c-shadow-rgb: 0, 0, 0;
+
+    --c-heading: #FFFFFF;
+    --c-link: var(--c-primary-300);
+    --c-link-hover: var(--c-blue-light);
+    --c-eyebrow: var(--c-primary-300);
+
+    color-scheme: dark;
+  }
+}
+
+/* -- dark palette: explicit choice (data-theme set by the toggle / no-flash script) -- */
+:root[data-theme="dark"] {
+  --c-primary-300: #6E97F0;
+  --c-primary-100: #1B2B4F;
+  --c-primary-050: #131F3A;
+  --c-accent-100: #3A1B22;
+  --c-ink: #FFFFFF;
+  --c-text: #E6EBF5;
+  --c-muted: #A5B0C6;
+  --c-line: rgba(255, 255, 255, 0.10);
+  --c-surface: #111C33;
+  --c-card: #15213D;
+  --c-bg: #0B1426;
+  --c-header-bg: #111C33;
+  --c-input-bg: #111C33;
+  --c-logo-box: #FFFFFF;
+  --c-logo-box-pad: 6px 10px;
+  --c-shadow-rgb: 0, 0, 0;
+
+  --c-heading: #FFFFFF;
+  --c-link: var(--c-primary-300);
+  --c-link-hover: var(--c-blue-light);
+  --c-eyebrow: var(--c-primary-300);
+
+  color-scheme: dark;
+}
+
+/* -- print: always render the light palette on paper -- */
+@media print {
+  :root {
+    --c-primary-300: #A9C4F3;
+    --c-primary-100: #E3EAFB;
+    --c-primary-050: #F3F6FD;
+    --c-accent-100: #FBE8E8;
+    --c-ink: #14181F;
+    --c-text: #2A313B;
+    --c-muted: #5B6470;
+    --c-line: #E3E7EC;
+    --c-surface: #F6F8FA;
+    --c-card: #FFFFFF;
+    --c-bg: #FFFFFF;
+    --c-header-bg: #FFFFFF;
+    --c-input-bg: #FFFFFF;
+    --c-logo-box: transparent;
+    --c-logo-box-pad: 0;
+    --c-shadow-rgb: 8, 28, 58;
+
+    --c-heading: var(--c-primary-900);
+    --c-link: var(--c-primary);
+    --c-link-hover: var(--c-primary-600);
+    --c-eyebrow: var(--c-primary-400);
+
+    color-scheme: light;
+  }
+}

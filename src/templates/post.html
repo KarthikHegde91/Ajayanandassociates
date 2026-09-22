@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+{{> head }}
+<body class="{{ page.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{{> header }}
+<main id="main">
+  <section class="hero hero--page">
+    <div class="container">
+      {{ page.breadcrumb_html }}
+      <p class="hero__eyebrow">Insights</p>
+      <h1 class="hero__title">{{ post.heading }}</h1>
+      <p class="hero__lead">{{ post.date_display }} &middot; {{ post.read_time }}</p>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <article class="prose container container--narrow">{{ post.body }}</article>
+    <div class="container container--narrow mt-6">
+      <p class="callout callout--note">This guide is general information, not professional advice. For guidance specific to your situation, please <a href="/contact/">get in touch with us</a>.</p>
+    </div>
+  </section>
+</main>
+{{> cta-band }}
+{{> footer }}
+{{> wa-float }}
+{{> mobile-bar }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* ============================================================
+   pages.css — small page-specific tweaks only. Keep this file
+   short; anything reusable belongs in components.css.
+   ============================================================ */
+
+/* -- resources page: "view all insights" link under the guides grid -- */
+.resources__more { text-align: center; margin-top: var(--sp-6); font-weight: 600; }
+.resources__more a { color: var(--c-link); text-decoration: none; }
+.resources__more a:hover { text-decoration: underline; }
+
+/* -- internal styleguide (throwaway QA page) -- */
+.page-styleguide .section { border-bottom: 1px dashed var(--c-line); }
+.page-styleguide .section:last-of-type { border-bottom: none; }
+.page-styleguide .sg-swatches { display: flex; flex-wrap: wrap; gap: var(--sp-4); }
+.page-styleguide .sg-swatch {
+  width: 7rem;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid var(--c-line);
+  font-size: var(--fs-xs);
+}
+.page-styleguide .sg-swatch__fill { height: 3.5rem; }
+.page-styleguide .sg-swatch__label { padding: var(--sp-2); background: var(--c-card); }
+.page-styleguide .sg-row { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: center; margin-top: var(--sp-4); }

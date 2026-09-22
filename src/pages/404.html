@@ -1,0 +1,35 @@
+---
+title: Page Not Found | Ajay Anand & Associates
+description: The page you are looking for could not be found.
+path: /404.html
+breadcrumb: Page Not Found
+robots: noindex,nofollow
+---
+<!DOCTYPE html>
+<html lang="en-IN">
+{{> head }}
+<body class="{{ page.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{{> header }}
+<main id="main">
+
+  <section class="hero hero--page"><div class="container">
+    <p class="hero__eyebrow">404</p>
+    <h1 class="hero__title">Page not found</h1>
+    <p class="hero__lead">The page you're looking for may have been moved or no longer exists. Try one of the links below, or get in touch and we'll help you find what you need.</p>
+    <div class="hero__actions">
+      <a class="btn btn--accent" href="/">Home</a>
+      <a class="btn btn--secondary" href="/services/">Services</a>
+      <a class="btn btn--secondary-light" href="/contact/">Contact</a>
+      <a class="btn btn--whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </div></section>
+
+</main>
+{{> cta-band }}
+{{> footer }}
+{{> wa-float }}
+{{> mobile-bar }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

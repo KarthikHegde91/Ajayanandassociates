@@ -1,0 +1,58 @@
+{{ form_notice_html }}
+<form class="form" id="enquiry" data-form{{ form_disabled_attr }} action="{{ form_action }}" method="POST" novalidate>{{ form_hidden }}
+  <div class="form__row">
+    <div class="form__field">
+      <label class="form__label" for="ef-name">Name</label>
+      <input class="form__input" type="text" id="ef-name" name="name" autocomplete="name" required>
+    </div>
+    <p class="form__error" role="alert"></p>
+  </div>
+
+  <div class="form__row">
+    <div class="form__field">
+      <label class="form__label" for="ef-phone">Phone Number</label>
+      <input class="form__input" type="tel" id="ef-phone" name="phone" autocomplete="tel" inputmode="tel" required>
+    </div>
+    <p class="form__error" role="alert"></p>
+  </div>
+
+  <div class="form__row">
+    <div class="form__field">
+      <label class="form__label" for="ef-email">Email</label>
+      <input class="form__input" type="email" id="ef-email" name="email" autocomplete="email" required>
+    </div>
+    <p class="form__error" role="alert"></p>
+  </div>
+
+  <div class="form__row">
+    <div class="form__field">
+      <label class="form__label" for="ef-org">Business / Organisation Name</label>
+      <input class="form__input" type="text" id="ef-org" name="organisation" autocomplete="organization">
+    </div>
+    <p class="form__error" role="alert"></p>
+  </div>
+
+  <div class="form__row">
+    <div class="form__field">
+      <label class="form__label" for="ef-service">Service Required</label>
+      <select class="form__select" id="ef-service" name="service">
+        <option value="" selected disabled>Select service</option>
+        {{ service_options_html }}
+      </select>
+    </div>
+    <p class="form__error" role="alert"></p>
+  </div>
+
+  <div class="form__row">
+    <div class="form__field">
+      <label class="form__label" for="ef-message">Message</label>
+      <textarea class="form__textarea" id="ef-message" name="message" placeholder="Tell us briefly about your requirement"></textarea>
+    </div>
+    <p class="form__error" role="alert"></p>
+  </div>
+
+  <button class="btn btn--primary btn--lg" type="submit">Submit Enquiry</button>
+
+  <p class="form__privacy">By submitting this form, you agree to our <a href="/privacy-policy/">Privacy Policy</a>.</p>
+  <p class="form__status" aria-live="polite"></p>
+</form>

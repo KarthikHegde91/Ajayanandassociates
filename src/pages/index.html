@@ -1,0 +1,112 @@
+---
+title: Accounting, GST & Tax Consultants, Bengaluru | Ajay Anand & Associates
+description: Ajay Anand & Associates offers accounting, bookkeeping, GST, income tax, TDS, audit support and filing services for businesses and individuals in Bengaluru.
+path: /
+breadcrumb: Home
+body_class: page-home
+---
+<!DOCTYPE html>
+<html lang="en-IN">
+{{> head }}
+<body class="{{ page.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{{> header }}
+<main id="main">
+
+  <section class="hero hero--home">
+    <div class="container hero__inner">
+      <div class="hero__text">
+      <p class="hero__eyebrow">Audit | Accounting | Taxation</p>
+      <h1 class="hero__title">Reliable Accounting, Tax &amp; Audit Solutions for Businesses and Individuals</h1>
+      <p class="hero__lead">We provide practical accounting, taxation, GST, audit support and filing solutions designed to help businesses maintain accurate records, meet statutory requirements and make informed financial decisions.</p>
+      <div class="hero__actions">
+        <a class="btn btn--accent btn--lg" href="{{ booking_href }}"{{ booking_attrs }}>Book a Consultation</a>
+        <a class="btn btn--whatsapp btn--lg" href="{{ whatsapp_url }}" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+      <ul class="hero__chips">
+        <li class="chip">Accounting &amp; Bookkeeping</li>
+        <li class="chip">GST Returns</li>
+        <li class="chip">Income Tax &amp; TDS</li>
+        <li class="chip">Audit Support</li>
+      </ul>
+      </div>
+      {{> hero-services }}
+    </div>
+  </section>
+
+  {{> trust-strip }}
+
+  <section class="section" data-reveal>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Our services</p>
+        <h2 class="section-head__title">Comprehensive Accounting, Tax &amp; Audit Services</h2>
+        <p class="section-head__lead">From everyday bookkeeping to GST, income tax, TDS, audit support and business registrations &mdash; practical filing services for businesses and individuals, in one place.</p>
+      </div>
+      <div class="grid grid--4">{{ services_cards_top_html }}</div>
+      <div class="section-foot">
+        <a class="btn btn--secondary" href="/services/">View all services</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="split">
+        <div class="split__text">
+          <p class="eyebrow">About us</p>
+          <h2>Your Trusted Partner for Accounting, Tax &amp; Audit</h2>
+          <p>Ajay Anand &amp; Associates is a professional accounting, auditing and taxation services firm providing practical financial and filing solutions to businesses, professionals and individuals.</p>
+          <p>We assist clients with accounting and bookkeeping, GST filings, income-tax matters, TDS, audit support, registrations and other business filing requirements.</p>
+          <a class="btn btn--primary" href="/about/">More about us</a>
+        </div>
+        <div class="split__media split__media--panel">
+          {{> process-static }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{> audience-split }}
+
+  {{> why-us }}
+
+  {{> process }}
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Industries we serve</p>
+        <h2 class="section-head__title">Financial Solutions Tailored to Different Businesses</h2>
+        <p class="section-head__lead">We work with businesses and organisations across various sectors.</p>
+      </div>
+      <ul class="chips chips--industries">{{ industries_chips_html }}</ul>
+      <div class="section-foot">
+        <a class="btn btn--secondary" href="/industries/">See how we help your industry</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="section-head__title">Frequently Asked Questions</h2>
+      </div>
+      <div class="container--narrow">{{ faq_top_html }}</div>
+      <div class="section-foot">
+        <a class="btn btn--secondary" href="/faq/">See all FAQs</a>
+      </div>
+    </div>
+  </section>
+
+  {{ testimonials_section_html }}
+
+</main>
+{{> cta-band }}
+{{> footer }}
+{{> wa-float }}
+{{> mobile-bar }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

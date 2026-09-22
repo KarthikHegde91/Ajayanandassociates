@@ -1,0 +1,20 @@
+{
+  "name": "Ajay Anand & Associates - Accounting, Audit, GST & Taxation",
+  "short_name": "Ajay Anand & Associates",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0B2545",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

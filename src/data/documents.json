@@ -1,0 +1,25 @@
+{
+  "business": [
+    "PAN of the entity and proprietor/partners",
+    "GST registration certificate and login access",
+    "Bank statements for the period",
+    "Sales and purchase invoices",
+    "Expense bills and vouchers",
+    "Previous financial statements and ITRs",
+    "TDS challans and returns filed",
+    "Payroll register and statutory registrations (PF/ESI/PT)",
+    "Loan statements and fixed asset details",
+    "Existing accounting data export (Tally/other)"
+  ],
+  "individual": [
+    "PAN and Aadhaar",
+    "Form 16 / Form 16A",
+    "Bank statements and interest certificates",
+    "Investment and deduction proofs",
+    "Capital gains statements from brokers/mutual funds",
+    "Property sale/purchase documents and rent receipts",
+    "Form 26AS / AIS / TIS",
+    "Details of foreign income or assets, if any",
+    "Previous year's ITR"
+  ]
+}

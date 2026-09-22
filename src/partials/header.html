@@ -1,0 +1,61 @@
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <a class="brand" href="/" aria-label="{{ site.name }} - home">
+      <img class="brand__img brand__img--light" src="/assets/img/logo-light.png" alt="{{ site.name }}" width="1872" height="431" decoding="async" fetchpriority="high">
+      <img class="brand__img brand__img--dark" src="/assets/img/logo-dark.png" alt="" aria-hidden="true" width="1872" height="431" decoding="async">
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="/about/">About</a></li>
+        <li class="nav__item nav__item--has-menu" data-nav-menu>
+          <button class="nav__link nav__group-btn" type="button" aria-expanded="false" aria-controls="menu-services">
+            Services
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="nav__menu nav__menu--wide" id="menu-services">
+            <li><a class="nav__sublink" href="/services/">All services</a></li>
+            {{ services_nav_html }}
+          </ul>
+        </li>
+        <li class="nav__item nav__item--has-menu" data-nav-menu>
+          <button class="nav__link nav__group-btn" type="button" aria-expanded="false" aria-controls="menu-who">
+            Who We Serve
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="nav__menu" id="menu-who">
+            <li><a class="nav__sublink" href="/for-businesses/">For Businesses</a></li>
+            <li><a class="nav__sublink" href="/for-individuals/">For Individuals &amp; Professionals</a></li>
+            <li><a class="nav__sublink" href="/industries/">Industries</a></li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--has-menu" data-nav-menu>
+          <button class="nav__link nav__group-btn" type="button" aria-expanded="false" aria-controls="menu-resources">
+            Resources
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="nav__menu" id="menu-resources">
+            <li><a class="nav__sublink" href="/resources/">Due-date calendar &amp; checklists</a></li>
+            <li><a class="nav__sublink" href="/insights/">Insights &amp; guides</a></li>
+            <li><a class="nav__sublink" href="/faq/">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="/contact/">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a class="nav__cta btn btn--accent" href="{{ booking_href }}"{{ booking_attrs }}>Book a Consultation</a>
+      </div>
+    </nav>
+
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">
+      <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+    </button>
+    <a class="header-call" href="{{ tel_href }}" aria-label="Call us">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+      <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+    </button>
+  </div>
+</header>

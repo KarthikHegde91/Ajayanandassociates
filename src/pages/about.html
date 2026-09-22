@@ -1,0 +1,75 @@
+---
+title: About Us | Ajay Anand & Associates, Bengaluru
+description: Ajay Anand & Associates is a Bengaluru accounting, audit, GST and taxation firm offering practical, transparent filing support for businesses and individuals.
+path: /about/
+breadcrumb: About Us
+body_class: page-about
+---
+<!DOCTYPE html>
+<html lang="en-IN">
+{{> head }}
+<body class="{{ page.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{{> header }}
+<main id="main">
+
+  <section class="hero hero--page">
+    <div class="container">
+      {{> breadcrumb }}
+      <p class="hero__eyebrow">About us</p>
+      <h1 class="hero__title">Your Trusted Partner for Accounting, Tax &amp; Audit</h1>
+      <p class="hero__lead">Ajay Anand &amp; Associates is a professional accounting, auditing and taxation services firm providing practical financial and filing solutions to businesses, professionals and individuals.</p>
+      <div class="hero__actions">
+        <a class="btn btn--accent" href="{{ booking_href }}"{{ booking_attrs }}>Book a Consultation</a>
+        <a class="btn btn--whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Who we are</p>
+        <h2 class="section-head__title">Who We Are</h2>
+      </div>
+      <div class="container--narrow prose">
+        <p>We assist clients with accounting and bookkeeping, GST filings, income-tax matters, TDS, audit support, registrations and other business filing requirements.</p>
+        <p>Our approach is simple: understand the client's requirements, identify the issues, provide practical solutions and ensure timely filings.</p>
+        <p>We believe that professional financial services should be accurate, transparent, responsive and easy to understand.</p>
+        <div class="callout callout--note">Statutory audit engagements are undertaken subject to applicable law, eligibility and professional requirements.</div>
+      </div>
+    </div>
+  </section>
+
+  {{> approach }}
+
+
+  {{> process }}
+
+  {{> trust-strip }}
+
+  {{ team_section_html }}
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">Who we work with</p>
+        <h2 class="section-head__title">Who We Work With</h2>
+        <p class="section-head__lead">We support businesses, professionals and individuals with their accounting, tax and filing requirements.</p>
+      </div>
+      <div class="section-foot">
+        <a class="btn btn--accent" href="/for-businesses/">For Businesses</a>
+        <a class="btn btn--primary" href="/for-individuals/">For Individuals &amp; Professionals</a>
+      </div>
+      <p class="section-foot"><a href="/industries/">See the industries we serve</a></p>
+    </div>
+  </section>
+
+</main>
+{{> cta-band }}
+{{> footer }}
+{{> wa-float }}
+{{> mobile-bar }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

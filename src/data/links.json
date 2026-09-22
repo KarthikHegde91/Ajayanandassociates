@@ -1,0 +1,47 @@
+[
+  {
+    "name": "GST Portal",
+    "url": "https://www.gst.gov.in",
+    "desc": "Registration, returns, payments and other GST filings."
+  },
+  {
+    "name": "Income Tax e-Filing",
+    "url": "https://www.incometax.gov.in",
+    "desc": "File income tax returns, view Form 26AS/AIS and respond to notices."
+  },
+  {
+    "name": "TRACES - TDS",
+    "url": "https://www.tdscpc.gov.in",
+    "desc": "TDS/TCS statements, Form 16/16A and related correspondence."
+  },
+  {
+    "name": "EPFO Unified Portal",
+    "url": "https://unifiedportal-emp.epfindia.gov.in",
+    "desc": "Employer PF registration, contributions and filings."
+  },
+  {
+    "name": "ESIC",
+    "url": "https://www.esic.gov.in",
+    "desc": "Employee State Insurance registration and contributions."
+  },
+  {
+    "name": "MCA",
+    "url": "https://www.mca.gov.in",
+    "desc": "Company and LLP filings and corporate records."
+  },
+  {
+    "name": "Karnataka Commercial Taxes / Professional Tax",
+    "url": "https://ctax.kar.nic.in",
+    "desc": "Karnataka Professional Tax registration and payments."
+  },
+  {
+    "name": "e-Way Bill",
+    "url": "https://ewaybillgst.gov.in",
+    "desc": "Generate and manage e-way bills for movement of goods."
+  },
+  {
+    "name": "e-Invoice",
+    "url": "https://einvoice1.gst.gov.in",
+    "desc": "Generate and manage e-invoices under GST."
+  }
+]

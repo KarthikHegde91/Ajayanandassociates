@@ -1,0 +1,56 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="/" aria-label="{{ site.name }} - home">
+          <img class="brand__img" src="/assets/img/logo-dark.png" alt="{{ site.name }}" width="1872" height="431" loading="lazy" decoding="async">
+        </a>
+        <p class="site-footer__tagline">{{ site.tagline }}</p>
+        <p class="site-footer__lines">Accounting &bull; GST &bull; Income Tax &bull; TDS &bull; Audit Support</p>
+      </div>
+
+      <div class="site-footer__col">
+        <p class="site-footer__heading">Quick Links</p>
+        <ul class="site-footer__list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/industries/">Industries</a></li>
+          <li><a href="/for-businesses/">For Businesses</a></li>
+          <li><a href="/for-individuals/">For Individuals</a></li>
+          <li><a href="/resources/">Resources</a></li>
+          <li><a href="/insights/">Insights</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <p class="site-footer__heading">Services</p>
+        <ul class="site-footer__list">
+          {{ services_footer_html }}
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <p class="site-footer__heading">Contact</p>
+        <ul class="site-footer__list">
+          <li>{{ address_display }}</li>
+          <li><a href="{{ tel_href }}">{{ site.phone_display }}</a></li>
+          <li><a href="{{ mailto_href }}">{{ site.email }}</a></li>
+          <li>{{ site.hours }}</li>
+          <li><a href="{{ whatsapp_url }}" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p>&copy; {{ year }} {{ site.name }}. All Rights Reserved.</p>
+      <div class="site-footer__legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/disclaimer/">Disclaimer</a>
+      </div>
+    </div>
+    <p class="site-footer__disclaimer">Disclaimer: The information provided on this website is for general informational purposes only and does not constitute legal, tax or financial advice. Professional services are provided based on the nature of the engagement and applicable laws, regulations and professional requirements. Specific advice should be obtained based on the individual circumstances of each client.</p>
+  </div>
+</footer>

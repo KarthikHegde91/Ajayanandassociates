@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+{{> head }}
+<body class="{{ page.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{{> header }}
+<main id="main">
+  <section class="hero hero--page">
+    <div class="container">
+      {{ page.breadcrumb_html }}
+      <p class="hero__eyebrow">Service {{ service.num }}</p>
+      <h1 class="hero__title">{{ service.title }}</h1>
+      <p class="hero__lead">{{ service.summary }}</p>
+      <div class="hero__actions">
+        <a class="btn btn--accent" href="{{ booking_href }}"{{ booking_attrs }}>Book a Consultation</a>
+        <a class="btn btn--whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What&rsquo;s included</p>
+        <h2 class="section-head__title">What&rsquo;s Included in {{ service.title }}</h2>
+      </div>
+      {{ service_checklist_html }}
+    </div>
+  </section>
+
+  <!-- optional: service.note, rendered by build.py as a full .callout--note div, or "" -->
+  <div class="container">
+    <div class="optional" data-optional><div class="optional__body">{{ service_note_html }}</div></div>
+  </div>
+
+  <!-- optional: service.deep_dive, rendered by build.py as a full <section>, or "" -->
+  <div class="optional" data-optional><div class="optional__body">{{ deep_dive_html }}</div></div>
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Who this is for</p>
+        <h2 class="section-head__title">Who This Service Is For</h2>
+      </div>
+      <ul class="chips">{{ who_for_html }}</ul>
+    </div>
+  </section>
+
+  <!-- optional section: hidden entirely by main.js / .optional:empty when documents_html is "" -->
+  <section class="section optional" data-optional data-reveal>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Be prepared</p>
+        <h2 class="section-head__title">Documents to Keep Ready</h2>
+      </div>
+      <div class="optional__body">{{ documents_html }}</div>
+    </div>
+  </section>
+
+  <!-- optional section: hidden entirely when calendar_subset_html is "" -->
+  <section class="section optional" data-optional data-reveal>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Stay on schedule</p>
+        <h2 class="section-head__title">Key Due Dates</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="calendar">
+          <thead><tr><th scope="col">Due date</th><th scope="col">Filing / payment</th><th scope="col">Note</th></tr></thead>
+          <tbody class="optional__body">{{ calendar_subset_html }}</tbody>
+        </table>
+      </div>
+      <p class="calendar__note-foot">Dates are indicative and subject to change or extension by the authorities. Please verify current due dates.</p>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Related services</p>
+        <h2 class="section-head__title">You May Also Need</h2>
+      </div>
+      <div class="grid grid--3">{{ related_cards_html }}</div>
+    </div>
+  </section>
+
+  <!-- optional section: hidden entirely when faq_subset_html is "" -->
+  <section class="section section--alt optional" data-optional data-reveal>
+    <div class="container container--narrow">
+      <div class="section-head">
+        <p class="eyebrow">Common questions</p>
+        <h2 class="section-head__title">Frequently Asked Questions</h2>
+      </div>
+      <div class="optional__body">{{ faq_subset_html }}</div>
+    </div>
+  </section>
+
+  {{ service_json_ld }}{{ faq_subset_json_ld }}
+</main>
+{{> cta-band }}
+{{> footer }}
+{{> wa-float }}
+{{> mobile-bar }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+---
+title: Industries We Serve | Ajay Anand & Associates, Bengaluru
+description: Accounting, GST and tax filings support for retail, restaurants, real estate, healthcare, education, start-ups, RWAs and manufacturing businesses in Bengaluru.
+path: /industries/
+breadcrumb: Industries
+---
+<!DOCTYPE html>
+<html lang="en-IN">
+{{> head }}
+<body class="{{ page.body_class }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{{> header }}
+<main id="main">
+
+  <section class="hero hero--page"><div class="container">
+    {{> breadcrumb }}
+    <p class="hero__eyebrow">Industries we serve</p>
+    <h1 class="hero__title">Financial Solutions Tailored to Different Businesses</h1>
+    <p class="hero__lead">We work with businesses and organisations across various sectors.</p>
+    <div class="hero__actions"><a class="btn btn--accent" href="{{ booking_href }}"{{ booking_attrs }}>Book a Consultation</a>
+    <a class="btn btn--whatsapp" href="{{ whatsapp_url }}" target="_blank" rel="noopener">WhatsApp Us</a></div>
+  </div></section>
+
+  <section class="section" data-reveal>
+    <div class="container">
+      <h2 class="sr-only">Sectors we work with</h2>
+      <div class="grid grid--3">{{ industries_cards_html }}</div>
+      <div class="callout callout--note">
+        <p>Don't see your industry? Our services are structured around requirements, not labels &mdash; <a href="/contact/">talk to us about your business</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" data-reveal>
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">Related services</p>
+        <h2 class="section-head__title">Comprehensive Accounting, Tax &amp; Audit Services</h2>
+      </div>
+      <div class="grid grid--4">{{ services_cards_top_html }}</div>
+    </div>
+  </section>
+
+</main>
+{{> cta-band }}
+{{> footer }}
+{{> wa-float }}
+{{> mobile-bar }}
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
