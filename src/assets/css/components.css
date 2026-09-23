@@ -455,7 +455,7 @@
   position: absolute;
   left: 0; top: 0.2em;
   width: 1.1em; height: 1.1em;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23E4EBF5'/%3E%3Cpath d='M6 10.2l2.4 2.4L14 7' stroke='%23ffffff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%235D5294'/%3E%3Cpath d='M6 10.2l2.4 2.4L14 7' stroke='%23ffffff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-size: contain;
 }
 .card__link {
@@ -1115,4 +1115,20 @@ div.optional__body { display: contents; } /* scoped to div: a <tbody class="opti
 @media (max-width: 767.98px) {
   .audience__panel { padding: var(--sp-5); }
   .audience__panel .checklist { margin-top: var(--sp-3); }
+}
+
+/* cards: breathing room above the "View details" link */
+.card__link { padding-top: var(--sp-3); }
+/* calendar table on phones: each row becomes a stacked block (date, item, note) */
+@media (max-width: 767.98px) {
+  .calendar { min-width: 0; display: block; }
+  .calendar thead { display: none; }
+  .calendar tbody, .calendar tr, .calendar td { display: block; width: 100%; box-sizing: border-box; }
+  .calendar tr { padding: var(--sp-3) var(--sp-4); border-bottom: 1px solid var(--c-line); }
+  .calendar tbody tr:last-child { border-bottom: none; }
+  .calendar td { padding: 0; border: 0; }
+  .calendar__date { white-space: normal; font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.04em; color: var(--c-link); margin-bottom: 0.15em; }
+  .calendar__item { font-weight: 600; color: var(--c-heading); font-size: var(--fs-base); }
+  .calendar__note { margin-top: 0.2em; font-size: var(--fs-sm); }
+  .section--navy .calendar__date { color: var(--c-link); }
 }
