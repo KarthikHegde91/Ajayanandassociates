@@ -1091,3 +1091,9 @@ div.optional__body { display: contents; } /* scoped to div: a <tbody class="opti
 .steps__text { font-size: var(--fs-xs); line-height: 1.45; color: rgba(255,255,255,0.78); margin: 0; }
 
 .form__notice--wa { font-size: var(--fs-sm); color: var(--c-muted); margin: 0 0 var(--sp-4); }
+
+/* contact card: label stacked above value so every value starts on the same column */
+.contact-card__row { display: grid; grid-template-columns: 44px minmax(0, 1fr); column-gap: var(--sp-4); row-gap: 0; align-items: start; }
+.contact-card__icon { grid-row: 1 / span 2; }
+.contact-card__label { grid-column: 2; display: block; margin: 0 0 0.15em; line-height: 1.3; }
+.contact-card__value { grid-column: 2; display: block; line-height: 1.45; overflow-wrap: anywhere; }
