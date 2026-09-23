@@ -1132,3 +1132,9 @@ div.optional__body { display: contents; } /* scoped to div: a <tbody class="opti
   .calendar__note { margin-top: 0.2em; font-size: var(--fs-sm); }
   .section--navy .calendar__date { color: var(--c-link); }
 }
+
+/* link cards: arrow pinned beside the title instead of floating at the bottom */
+.link-card { position: relative; padding-right: calc(var(--sp-5) + 28px); }
+.link-card__arrow { position: absolute; top: calc(var(--sp-5) + 2px); right: var(--sp-5); margin: 0; }
+.calendar__cta a { white-space: nowrap; }
+@media (max-width: 479.98px) { .calendar__cta a { white-space: normal; display: inline-block; } }
