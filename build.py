@@ -362,12 +362,11 @@ def build() -> int:
         f'<input type="hidden" name="redirect" value="{esc(site_url)}/thank-you/">'
         '<input type="checkbox" name="botcheck" class="form__hp" tabindex="-1" autocomplete="off" aria-hidden="true">'
     )
-    form_disabled_attr = "" if key else " data-form-disabled"
+    form_disabled_attr = "" if key else f' data-form-whatsapp="{wa_number}"'
     form_notice_html = "" if key else (
-        '<p class="callout callout--warn form__notice">The enquiry form is not connected yet. '
-        f'Please <a href="{esc(whatsapp_url)}" target="_blank" rel="noopener">WhatsApp us</a> or call instead.</p>')
+        '<p class="form__notice form__notice--wa">Your enquiry opens in WhatsApp with the details filled in, so you can send it straight to us.</p>')
     if not key:
-        print("warning: form.web3forms_key is empty - enquiry form is disabled until it is set", file=sys.stderr)
+        print("note: form.web3forms_key is empty - enquiry forms hand off to WhatsApp", file=sys.stderr)
     for field in ("phone_display", "phone_e164", "whatsapp", "email", "url"):
         val = str(cfg.get(field, ""))
         if "XXXX" in val.upper() or "example" in val.lower() or not val:

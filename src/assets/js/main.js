@@ -250,6 +250,20 @@
 
       if (!validate()) return;
 
+      if (form.hasAttribute("data-form-whatsapp")) {
+        var fd = new FormData(form);
+        var lines = ["Hello, I would like to make an enquiry."];
+        var labels = { name: "Name", phone: "Phone", email: "Email", organisation: "Business", service: "Service", message: "Message" };
+        fd.forEach(function (value, key) {
+          if (!value || key === "botcheck" || key === "access_key" || key === "subject" || key === "from_name" || key === "redirect" || key === "source") return;
+          lines.push((labels[key] || key) + ": " + value);
+        });
+        var waUrl = "https://wa.me/" + form.getAttribute("data-form-whatsapp") + "?text=" + encodeURIComponent(lines.join("\n"));
+        if (statusEl) { statusEl.className = "form__status form__status--ok"; statusEl.textContent = "Opening WhatsApp with your enquiry..."; }
+        window.open(waUrl, "_blank", "noopener");
+        return;
+      }
+
       var data = new FormData(form);
       if (submitBtn) {
         submitBtn.disabled = true;
