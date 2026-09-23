@@ -375,7 +375,7 @@ def build() -> int:
         + '<option value="Other">Other / Not sure</option>'
 
     addr = cfg.get("address", {}) or {}
-    org_ld = json_ld({
+    org_ld = json_ld({k: v for k, v in {
         "@context": "https://schema.org", "@type": "AccountingService", "@id": site_url + "/#organization",
         "name": cfg.get("name"), "url": site_url + "/", "logo": site_url + "/assets/img/logo.png",
         "image": site_url + cfg.get("og_image", "/assets/img/og-image.png"),
@@ -387,8 +387,10 @@ def build() -> int:
         "areaServed": [{"@type": "City", "name": "Bengaluru"}, {"@type": "State", "name": "Karnataka"},
                        {"@type": "Country", "name": "India"}],
         "openingHours": cfg.get("hours_schema", []), "priceRange": "$$",
+        "hasMap": cfg.get("maps_link", ""),
+        "geo": {"@type": "GeoCoordinates", "latitude": (cfg.get("geo") or {}).get("lat"), "longitude": (cfg.get("geo") or {}).get("lng")} if cfg.get("geo") else None,
         "sameAs": [u for u in (cfg.get("social", {}) or {}).values() if u],
-    })
+    }.items() if v is not None})
 
     def testimonials_section():
         t = cfg.get("testimonials", {}) or {}
@@ -474,6 +476,7 @@ def build() -> int:
         "posts_latest_html": "".join(post_card(fm) for fm, _, _ in posts[:3]),
         "testimonials_section_html": testimonials_section(),
         "team_section_html": team_section(),
+        "maps_link": esc(cfg.get("maps_link") or "https://www.google.com/maps?q=" + urllib.parse.quote(cfg.get("name", ""))),
         "address_display": esc(", ".join(x for x in (addr.get("street"), addr.get("locality"), (addr.get("region", "") + " " + addr.get("postal", "")).strip()) if x)),
         "hero_services_html": "".join(f'<li class="hero-list__item"><a class="hero-list__link" href="/services/{s["slug"]}/"><span class="hero-list__num">{esc(s.get("num", ""))}</span><span class="hero-list__title">{esc(s["title"])}</span>{ARROW}</a></li>' for s in services[:5]),
         "industries_chips_html": "".join(f'<li class="chip">{esc(i["title"])}</li>' for i in industries),

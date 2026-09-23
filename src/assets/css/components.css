@@ -1138,3 +1138,5 @@ div.optional__body { display: contents; } /* scoped to div: a <tbody class="opti
 .link-card__arrow { position: absolute; top: calc(var(--sp-5) + 2px); right: var(--sp-5); margin: 0; }
 .calendar__cta a { white-space: nowrap; }
 @media (max-width: 479.98px) { .calendar__cta a { white-space: normal; display: inline-block; } }
+
+.contact-card__map { display: inline-block; margin-top: 0.35em; font-size: var(--fs-sm); font-weight: 600; color: var(--c-link) !important; text-decoration: underline; text-underline-offset: 3px; }

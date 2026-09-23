@@ -10,17 +10,17 @@
   "whatsapp_text": "Hello Ajay Anand & Associates, I would like to discuss my accounting / GST / tax requirements.",
   "email": "ajaya7acc@gmail.com",
   "address": {
-    "street": "110, 4th Main, 4th Cross, Mathikere",
+    "street": "424, 6th Main, 6th Cross Road, near Balaji Kalyana Mantapa, M S R Nagar, Mathikere",
     "locality": "Bengaluru",
     "region": "Karnataka",
     "postal": "560054",
     "country": "IN"
   },
-  "hours": "Monday - Saturday, 10:00 AM - 6:00 PM",
+  "hours": "Monday - Sunday, 9:00 AM - 6:00 PM",
   "hours_schema": [
-    "Mo-Sa 10:00-18:00"
+    "Mo-Su 09:00-18:00"
   ],
-  "maps_embed": "https://www.google.com/maps?q=110,+4th+Main,+4th+Cross,+Mathikere,+Bengaluru+560054&output=embed",
+  "maps_embed": "https://www.google.com/maps?q=Ajay+Anand+%26+Associates+-+Auditor,+424+6th+Main,+6th+Cross+Road,+M+S+R+Nagar,+Mathikere,+Bengaluru+560054&z=16&output=embed",
   "booking_url": "",
   "hero_video": "",
   "hero_video_poster": "",
@@ -58,5 +58,10 @@
         "bio": ""
       }
     ]
+  },
+  "maps_link": "https://www.google.com/maps/place/Ajay+Anand+%26+Associates+-+Auditor/@13.0339721,77.5635949,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae177fc04c1fd9:0xcc09d0d571da38ae!8m2!3d13.0339721!4d77.5635949!16s%2Fg%2F11ywm_kwg9",
+  "geo": {
+    "lat": 13.0339721,
+    "lng": 77.5635949
   }
 }
