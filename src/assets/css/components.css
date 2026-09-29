@@ -1044,9 +1044,10 @@ div.optional__body { display: contents; } /* scoped to div: a <tbody class="opti
 .brand--footer { background: none; padding: 0; margin-bottom: var(--sp-4); display: inline-block; }
 @media (max-width: 1023.98px) { .brand__img { height: 36px; } }
 
-.brand__img { height: 52px; }
-@media (max-width: 1279.98px) { .brand__img { height: 44px; } }
-@media (max-width: 1023.98px) { .brand__img { height: 40px; } }
+.brand__img { height: 40px; }
+@media (max-width: 1279.98px) { .brand__img { height: 38px; } }
+@media (max-width: 1023.98px) { .brand__img { height: 34px; } }
+.brand--footer .brand__img { height: 44px; }
 
 /* ==== Motion: hero text entrance ==== */
 @media (prefers-reduced-motion: no-preference) {
