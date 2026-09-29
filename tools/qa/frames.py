@@ -8,6 +8,7 @@ from cdp import launch, wait_load
 args = sys.argv[1:]
 width, url, ts = int(args[0]), args[1], [float(x) for x in args[2].split(",")]
 dark = "--dark" in args
+light = "--light" in args
 sel = args[args.index("--scroll-to") + 1] if "--scroll-to" in args else ""
 out = args[args.index("--out") + 1] if "--out" in args else "shots"
 os.makedirs(out, exist_ok=True)
@@ -18,6 +19,8 @@ try:
     ws.call("Page.navigate", url=url); wait_load(ws)
     if dark:
         ws.call("Runtime.evaluate", expression="document.documentElement.setAttribute('data-theme','dark')")
+    if light:
+        ws.call("Runtime.evaluate", expression="document.documentElement.setAttribute('data-theme','light')")
     if sel:
         ws.call("Runtime.evaluate", expression=f"document.querySelector('{sel}').scrollIntoView({{block:'center'}})")
     start = time.time()
@@ -25,7 +28,7 @@ try:
         while time.time() - start < t:
             time.sleep(0.05)
         r, _ = ws.call("Page.captureScreenshot", format="png")
-        name = os.path.join(out, f"frame-{width}-{t:g}{'-dark' if dark else ''}{'-' + sel.strip('.#') if sel else ''}.png")
+        name = os.path.join(out, f"frame-{width}-{t:g}{'-dark' if dark else ('-light' if light else '')}{'-' + sel.strip('.#') if sel else ''}.png")
         open(name, "wb").write(base64.b64decode(r["data"]))
         print("saved", name, flush=True)
 finally:

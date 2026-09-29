@@ -455,7 +455,7 @@
   position: absolute;
   left: 0; top: 0.2em;
   width: 1.1em; height: 1.1em;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%235D5294'/%3E%3Cpath d='M6 10.2l2.4 2.4L14 7' stroke='%23ffffff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23C9A15A'/%3E%3Cpath d='M6 10.2l2.4 2.4L14 7' stroke='%23ffffff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-size: contain;
 }
 .card__link {
@@ -550,7 +550,7 @@
   position: absolute;
   left: 0; top: 0.1em;
   width: 1.25rem; height: 1.25rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23ffffff'/%3E%3Cpath d='M6 10.5l2.5 2.5L14 7' stroke='%235D5294' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23ffffff'/%3E%3Cpath d='M6 10.5l2.5 2.5L14 7' stroke='%23C9A15A' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-size: contain;
 }
 
@@ -759,7 +759,7 @@
 .audience__panel--surface { background: var(--c-surface); border: 1px solid var(--c-line); }
 .audience__panel .checklist__item { margin-top: 0; }
 .audience__panel--navy .checklist__item::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%235D5294'/%3E%3Cpath d='M6 10.5l2.5 2.5L14 7' stroke='%23ffffff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23C9A15A'/%3E%3Cpath d='M6 10.5l2.5 2.5L14 7' stroke='%23ffffff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 /* ---------------------------------------------------------- testimonial / team -- */
@@ -966,7 +966,7 @@ div.optional__body { display: contents; } /* scoped to div: a <tbody class="opti
 .hero--home .hero__title { font-weight: 800; letter-spacing: -0.03em; }
 .hero--page {
   background:
-    radial-gradient(40% 70% at 95% 0%, rgba(93,82,148,0.12), transparent 60%),
+    radial-gradient(40% 70% at 95% 0%, rgba(201,161,90,0.16), transparent 60%),
     var(--c-primary-050);
 }
 .eyebrow, .hero__eyebrow { display: inline-flex; align-items: center; gap: 0.6em; }
@@ -976,8 +976,8 @@ div.optional__body { display: contents; } /* scoped to div: a <tbody class="opti
 .card:hover { border-color: rgba(var(--c-shadow-rgb), 0.14); }
 .card--service .card__num { font-family: var(--font-head); font-weight: 800; letter-spacing: -0.02em; }
 .btn { font-family: var(--font-head); font-weight: 700; letter-spacing: -0.005em; }
-.btn--accent { box-shadow: 0 6px 18px rgba(93,82,148,0.30); }
-.btn--accent:hover { box-shadow: 0 10px 24px rgba(93,82,148,0.40); transform: translateY(-1px); }
+.btn--accent { box-shadow: 0 6px 18px rgba(201,161,90,0.30); }
+.btn--accent:hover { box-shadow: 0 10px 24px rgba(201,161,90,0.40); transform: translateY(-1px); }
 .hero__actions, .cta-band__actions { align-items: center; }
 .section-foot { text-align: left; }
 .section-head--center ~ .section-foot, .text-center .section-foot { text-align: center; }
@@ -1015,15 +1015,15 @@ div.optional__body { display: contents; } /* scoped to div: a <tbody class="opti
   .nav__cta { padding-inline: 0.85em; font-size: 0.85rem; min-height: 40px; }
 }
 
-/* ==== Brand alignment with the supplied logo (blue + red) ==== */
+/* ==== Brand alignment with the supplied logo (navy + gold, Sep 2026) ==== */
 .brand__img { height: 46px; width: auto; display: block; }
 .site-footer__logo-box { background: #fff; border-radius: var(--r-md); padding: 10px 14px; display: inline-block; margin-bottom: var(--sp-4); }
 .site-footer__logo-box .brand__img { height: 44px; }
 .eyebrow, .hero__eyebrow { color: var(--c-eyebrow); }
 .eyebrow::before, .hero__eyebrow::before { background: var(--c-accent); }
 .card--service .card__num { color: var(--c-primary-400); }
-.btn--accent { color: #fff; }
-.btn--accent:hover, .btn--accent:focus-visible { color: #fff; background: var(--c-accent-600); }
+.btn--accent { color: var(--c-primary-900); }
+.btn--accent:hover, .btn--accent:focus-visible { color: var(--c-primary-900); background: var(--c-accent-600); }
 .tile__icon, .card__icon { background: var(--c-primary-100); color: var(--c-primary-400); }
 .site-footer__heading { color: var(--c-blue-light); }
 .checklist__item::before, .audience__panel--navy .checklist__item::before { filter: none; }

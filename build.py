@@ -377,7 +377,7 @@ def build() -> int:
     addr = cfg.get("address", {}) or {}
     org_ld = json_ld({k: v for k, v in {
         "@context": "https://schema.org", "@type": "AccountingService", "@id": site_url + "/#organization",
-        "name": cfg.get("name"), "url": site_url + "/", "logo": site_url + "/assets/img/logo.png",
+        "name": cfg.get("name"), "url": site_url + "/", "logo": site_url + "/assets/img/logo-light.png",
         "image": site_url + cfg.get("og_image", "/assets/img/og-image.png"),
         "description": cfg.get("description", ""),
         "telephone": cfg.get("phone_e164", ""), "email": cfg.get("email", ""),

@@ -13,16 +13,16 @@
    ============================================================ */
 :root {
   /* -- colour: navy & gold -- */
-  --c-primary-900: #161826;
-  --c-primary: #232552;
-  --c-primary-600: #3B3488;
-  --c-primary-400: #5D5294;
-  --c-primary-300: #B5ABFC;
-  --c-primary-100: #E4E7F5;
-  --c-primary-050: #F3F5FE;
-  --c-accent: #5D5294;
-  --c-accent-600: #4A4178;
-  --c-accent-100: #ECEAF9;
+  --c-primary-900: #04233F;
+  --c-primary: #0B2E52;
+  --c-primary-600: #164275;
+  --c-primary-400: #2F6AAE;
+  --c-primary-300: #D4B678;
+  --c-primary-100: #E3EAF4;
+  --c-primary-050: #F2F6FB;
+  --c-accent: #C9A15A;
+  --c-accent-600: #98722F;
+  --c-accent-100: #F8F0DE;
   --c-ink: #14181F;
   --c-text: #2A313B;
   --c-muted: #5B6470;
@@ -38,9 +38,9 @@
   --logo-dark-display: none;
   --c-success: #1E8E5A;
   --c-error: #C0392B;
-  --c-blue-light: #B5ABFC;
+  --c-blue-light: #E2C48A;
   --c-whatsapp: #25D366;
-  --c-shadow-rgb: 22, 24, 38;
+  --c-shadow-rgb: 4, 35, 63;
 
   /* -- semantic aliases: same value as their light source above;
      only the dark blocks give these a different colour -- */
@@ -101,19 +101,22 @@
 /* -- dark palette: OS default (no explicit choice stored) -- */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --c-primary-300: #B5ABFC;
-    --c-primary-100: #2B2741;
-    --c-primary-050: #1C1E33;
-    --c-accent-100: #2B2741;
+    --c-primary-400: #7FAEE6;
+    --c-primary-300: #E2C48A;
+    --c-accent-600: #E2C48A;
+    --c-blue-light: #EDD7A6;
+    --c-primary-100: #17345A;
+    --c-primary-050: #10243F;
+    --c-accent-100: #243449;
     --c-ink: #FFFFFF;
-    --c-text: #E6EBF5;
-    --c-muted: #A5B0C6;
+    --c-text: #E4EAF3;
+    --c-muted: #A9B6C9;
     --c-line: rgba(255, 255, 255, 0.10);
-    --c-surface: #1C1E33;
-    --c-card: #22243D;
-    --c-bg: #161826;
-    --c-header-bg: #1C1E33;
-    --c-input-bg: #1C1E33;
+    --c-surface: #10243F;
+    --c-card: #14294A;
+    --c-bg: #0A1A2E;
+    --c-header-bg: #10243F;
+    --c-input-bg: #10243F;
     --c-logo-box: transparent;
     --c-logo-box-pad: 0;
     --logo-light-display: none;
@@ -131,19 +134,22 @@
 
 /* -- dark palette: explicit choice (data-theme set by the toggle / no-flash script) -- */
 :root[data-theme="dark"] {
-  --c-primary-300: #B5ABFC;
-  --c-primary-100: #2B2741;
-  --c-primary-050: #1C1E33;
-  --c-accent-100: #2B2741;
+  --c-primary-400: #7FAEE6;
+  --c-primary-300: #E2C48A;
+  --c-accent-600: #E2C48A;
+  --c-blue-light: #EDD7A6;
+  --c-primary-100: #17345A;
+  --c-primary-050: #10243F;
+  --c-accent-100: #243449;
   --c-ink: #FFFFFF;
-  --c-text: #E6EBF5;
-  --c-muted: #A5B0C6;
+  --c-text: #E4EAF3;
+  --c-muted: #A9B6C9;
   --c-line: rgba(255, 255, 255, 0.10);
-  --c-surface: #1C1E33;
-  --c-card: #22243D;
-  --c-bg: #161826;
-  --c-header-bg: #1C1E33;
-  --c-input-bg: #1C1E33;
+  --c-surface: #10243F;
+  --c-card: #14294A;
+  --c-bg: #0A1A2E;
+  --c-header-bg: #10243F;
+  --c-input-bg: #10243F;
   --c-logo-box: transparent;
   --c-logo-box-pad: 0;
   --logo-light-display: none;
@@ -161,10 +167,13 @@
 /* -- print: always render the light palette on paper -- */
 @media print {
   :root {
-    --c-primary-300: #B5ABFC;
-    --c-primary-100: #E4E7F5;
-    --c-primary-050: #F3F5FE;
-    --c-accent-100: #ECEAF9;
+    --c-primary-400: #2F6AAE;
+    --c-primary-300: #D4B678;
+    --c-accent-600: #98722F;
+    --c-blue-light: #E2C48A;
+    --c-primary-100: #E3EAF4;
+    --c-primary-050: #F2F6FB;
+    --c-accent-100: #F8F0DE;
     --c-ink: #14181F;
     --c-text: #2A313B;
     --c-muted: #5B6470;
@@ -178,7 +187,7 @@
     --c-logo-box-pad: 0;
     --logo-light-display: block;
     --logo-dark-display: none;
-    --c-shadow-rgb: 22, 24, 38;
+    --c-shadow-rgb: 4, 35, 63;
 
     --c-heading: var(--c-primary-900);
     --c-link: var(--c-primary);

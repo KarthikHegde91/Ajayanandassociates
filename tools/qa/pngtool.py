@@ -43,9 +43,29 @@ def chunk(t, d): return struct.pack('>I', len(d)) + t + d + struct.pack('>I', zl
 
 
 def write_png(path, w, rows, bitdepth, colortype):
-    raw = b''.join(b'\x00' + bytes(r) for r in rows)
+    bpp = {2: 3, 6: 4, 0: 1, 4: 2}[colortype] * (bitdepth // 8)
+    best = None
+    for f in (0, 1, 2, 4):  # try a few whole-image filters, keep the smallest
+        prev = bytes(len(rows[0]))
+        parts = []
+        for r in rows:
+            r = bytes(r)
+            if f == 0: parts.append(b'\x00' + r)
+            elif f == 1: parts.append(b'\x01' + bytes((r[i] - (r[i-bpp] if i >= bpp else 0)) & 255 for i in range(len(r))))
+            elif f == 2: parts.append(b'\x02' + bytes((r[i] - prev[i]) & 255 for i in range(len(r))))
+            else:
+                o = bytearray(len(r))
+                for i in range(len(r)):
+                    a = r[i-bpp] if i >= bpp else 0; b = prev[i]; c = prev[i-bpp] if i >= bpp else 0
+                    pa = abs(b - c); pb = abs(a - c); pc = abs(a + b - 2*c)
+                    pr = a if pa <= pb and pa <= pc else (b if pb <= pc else c)
+                    o[i] = (r[i] - pr) & 255
+                parts.append(b'\x04' + bytes(o))
+            prev = r
+        cand = zlib.compress(b''.join(parts), 9)
+        if best is None or len(cand) < len(best): best = cand
     out = b'\x89PNG\r\n\x1a\n' + chunk(b'IHDR', struct.pack('>IIBBBBB', w, len(rows), bitdepth, colortype, 0, 0, 0))
-    out += chunk(b'IDAT', zlib.compress(raw, 9)) + chunk(b'IEND', b'')
+    out += chunk(b'IDAT', best) + chunk(b'IEND', b'')
     open(path, 'wb').write(out)
 
 
